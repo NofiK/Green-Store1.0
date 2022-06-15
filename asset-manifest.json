@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Green-Store1.0/static/css/main.21eddfa2.css",
+    "main.js": "/Green-Store1.0/static/js/main.15c57890.js",
+    "static/media/Cabbage.png": "/Green-Store1.0/static/media/Cabbage.e6e09f93279db8a52eec.png",
+    "static/media/Butter.png": "/Green-Store1.0/static/media/Butter.862430b3e1edb058c70b.png",
+    "static/media/Onion.png": "/Green-Store1.0/static/media/Onion.7596c4596edd144a9410.png",
+    "static/media/Cheese.png": "/Green-Store1.0/static/media/Cheese.75541fe771927592c44e.png",
+    "static/media/Milk.png": "/Green-Store1.0/static/media/Milk.a3b474e7137f83516831.png",
+    "static/media/Carrot.png": "/Green-Store1.0/static/media/Carrot.109742dffb1e95a04f97.png",
+    "static/media/Logo.png": "/Green-Store1.0/static/media/Logo.de1c2da2b6aca8629519.png",
+    "static/media/Broccoli.png": "/Green-Store1.0/static/media/Broccoli.a4658dcb276fccfa7bb6.png",
+    "index.html": "/Green-Store1.0/index.html",
+    "main.21eddfa2.css.map": "/Green-Store1.0/static/css/main.21eddfa2.css.map",
+    "main.15c57890.js.map": "/Green-Store1.0/static/js/main.15c57890.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21eddfa2.css",
+    "static/js/main.15c57890.js"
+  ]
+}
