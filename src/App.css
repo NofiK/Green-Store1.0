@@ -1,38 +1,365 @@
-.App {
-  text-align: center;
+body {
+    background-color: rgb(232, 255, 233);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+    color: rgb(1, 150, 1);
+    font-size: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: -6px 5px 5px rgba(33, 33, 33, 0.2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo {
+    width: 100px;
+    height: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* ----------------------------- */
+
+
+/* ----------------------------- */
+
+
+/* ----------------------------- */
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    background-color: rgb(244, 255, 247);
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 20px 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item img {
+    margin-right: 20px;
+}
+
+.productImg {
+    width: 80px;
+    height: 80px;
+}
+
+.minusP {
+    background-color: rgb(255, 70, 70);
+    padding: 6px 8px;
+    margin: 0px;
+}
+
+.plusP {
+    background-color: rgb(85, 211, 85);
+    padding: 6px 8px;
+    margin: 0px;
+}
+
+.minusP:hover {
+    opacity: 70%;
+}
+
+.plusP:hover {
+    opacity: 70%;
+}
+
+.plusMinusDiv {
+    text-align: center;
+    margin: 0px 0px 0px 5px;
+}
+
+.itemsList {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    margin: 80px auto 0 auto;
+}
+
+
+/* ----------------------------- */
+
+
+/* ----------------------------- */
+
+
+/* ----------------------------- */
+
+.sidenav {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.3s;
+    background-color: rgb(244, 255, 247);
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 20px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #606060;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+.busket {
+    font-size: 40px;
+    background-color: rgb(1, 150, 1);
+    padding: 15px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.busketP {
+    padding: 1px 6px 1px 6px;
+    border-radius: 100%;
+    background-color: red;
+    color: #fff;
+    position: absolute;
+    top: 50px;
+    right: 55px;
+}
+
+.busketPage {
+    top: 30px;
+    right: 30px;
+    position: fixed;
+}
+
+.busketPage:hover {
+    opacity: 80%;
+}
+
+.busketProducts {
+    margin-left: 15px;
+}
+
+.busketH1 {
+    color: rgb(1, 150, 1);
+    font-size: 30px;
+    margin: 23px 20px 40px 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: -6px 5px 5px rgba(33, 33, 33, 0.2);
+}
+
+.busketH1Total {
+    color: rgb(1, 150, 1);
+    font-size: 30px;
+    margin: 40px 10px 20px 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: -6px 5px 5px rgba(33, 33, 33, 0.2);
+}
+
+.busketBuyBtn {
+    display: flex;
+    margin: 10px auto 20px auto;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 35px;
+    border: none;
+    background-color: rgb(1, 150, 1);
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 10px;
+    color: #fff;
+    text-shadow: -6px 5px 5px rgba(33, 33, 33, 0.2);
+    box-shadow: -4px 4px 4px rgba(33, 33, 33, 0.2);
+}
+
+.busketBuyBtn:hover {
+    opacity: 80%;
+}
+
+
+/* ----------------------------- */
+
+
+/* ----------------------------- */
+
+
+/* ----------------------------- */
+
+@media (min-width: 230px) and (max-width:355px) {
+    h1 {
+        font-size: 28px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .header {
+        justify-content: left;
+        margin-top: 25px;
+    }
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+    /* ---------------------- */
+    .item {
+        width: 40%;
+        margin: 20px 10px;
+    }
+    .item img {
+        margin-right: 10px;
+    }
+    .productImg {
+        width: 40px;
+        height: 40px;
+    }
+    .itemsList {
+        width: 100%;
+        margin: 20px auto 0 auto;
+        font-size: 8px;
+    }
+    /* ----------------------------- */
+    .busket {
+        font-size: 25px;
+    }
+    .busketP {
+        top: 35px;
+        right: 40px;
+    }
+    .busketPage {
+        top: 30px;
+        right: 10px;
+    }
+    .busketProducts {
+        margin-left: 15px;
+        font-size: 20px
+    }
+    .busketH1 {
+        font-size: 25px;
+        margin: 27px 20px 30px 15px;
+    }
+}
+
+@media (min-width: 355px) and (max-width:500px) {
+    h1 {
+        font-size: 35px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .header {
+        justify-content: left;
+        margin-top: 25px;
+    }
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+    /* ---------------------- */
+    .item {
+        width: 40%;
+        margin: 20px 15px;
+    }
+    .item img {
+        margin-right: 20px;
+    }
+    .productImg {
+        width: 50px;
+        height: 50px;
+    }
+    .itemsList {
+        width: 100%;
+        margin: 20px auto 0 auto;
+        font-size: 12px;
+    }
+    /* ----------------------------- */
+    .busket {
+        font-size: 30px;
+    }
+    .busketP {
+        top: 40px;
+        right: 45px;
+    }
+    .busketPage {
+        top: 30px;
+        right: 10px;
+    }
+    .busketProducts {
+        margin-left: 15px;
+        font-size: 20px
+    }
+    .busketH1 {
+        font-size: 25px;
+        margin: 27px 20px 30px 15px;
+    }
+}
+
+@media (min-width: 500px) and (max-width:1000px) {
+    h1 {
+        font-size: 50px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .header {
+        justify-content: center;
+        margin-top: 25px;
+    }
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+    /* ---------------------- */
+    .item {
+        width: 40%;
+        margin: 20px 20px;
+    }
+    .item img {
+        margin-right: 20px;
+    }
+    .productImg {
+        width: 65px;
+        height: 65px;
+    }
+    .itemsList {
+        width: 80%;
+        margin: 20px auto 0 auto;
+        font-size: 18px;
+    }
+    /* ----------------------------- */
+    .busket {
+        font-size: 40px;
+    }
+    .busketP {
+        top: 50px;
+        right: 55px;
+    }
+    .busketPage {
+        top: 40px;
+        right: 35px;
+    }
+    .busketProducts {
+        margin-left: 15px;
+        font-size: 25px
+    }
+    .busketH1 {
+        font-size: 30px;
+        margin: 27px 20px 30px 15px;
+    }
 }
